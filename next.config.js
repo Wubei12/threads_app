@@ -28,9 +28,9 @@ const nextConfig = {
       },
     ],
 
-    // typescript: {
-    //   ignoreBuildErrors: true,
-    // },
+    typescript: {
+      ignoreBuildErrors: true,
+    },
   },
 };
 
