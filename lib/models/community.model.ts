@@ -8,7 +8,7 @@ const communitySchema = new mongoose.Schema({
   bio: String,
   createdBy: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: "Thread",
+    ref: "User",
   },
   threads: [
     {
@@ -25,6 +25,6 @@ const communitySchema = new mongoose.Schema({
 });
 
 const Community =
-  mongoose.models.Community || mongoose.model("User", communitySchema);
+  mongoose.models.Community || mongoose.model("Community", communitySchema);
 
 export default Community;
